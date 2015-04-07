@@ -3,7 +3,7 @@ sap.ui.jsview('myapp.view.My', {
 		var settings = {
 			text: 'My Button',
 			icon: 'sap-icon://popup-window'
-		}
+		};
 
 		var oButton = new sap.ui.commons.Button('myButton', settings);
 
@@ -13,10 +13,11 @@ sap.ui.jsview('myapp.view.My', {
 	},
 
 	openConfirm: function() {
-		sap.ui.commons.MessageBox.confirm('Some message text', fnCallback, 'Alert title');
+		var oView = this.getParent();
+		sap.ui.commons.MessageBox.confirm('Some message text', oView.ofnCallback, 'Alert title');
+	},
 
-		function fnCallback(result) {
-			jQuery.sap.log.info('Result is', result);
-		}
+	ofnCallback: function(r) {
+		jQuery.sap.log.info('Result is', r);
 	}
 });
