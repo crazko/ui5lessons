@@ -1,0 +1,1 @@
+$.sap.log.setLevel($.sap.log.Level.DEBUG);
