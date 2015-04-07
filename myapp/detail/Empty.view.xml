@@ -1,0 +1,14 @@
+<core:View controllerName="myapp.detail.Empty"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<Page title="{i18n>empty}">
+		<html:h1>text</html:h1>
+
+		<Button
+			text="{i18n>button}"
+			icon="sap-icon://popup-window"
+			press="handleShowPopup"
+		/>
+	</Page>
+
+</core:View>
