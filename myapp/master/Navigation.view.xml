@@ -3,6 +3,20 @@
 
 	<Page title="{i18n>navigation}">
 
+		<List
+			headerText="{i18n>inbox}"
+			showUnread="true"
+			items="{/Data}"
+		>
+			<StandardListItem
+				type="Active"
+				press="handleSelectItem"
+				title="{name}"
+				description="{description}"
+				unread="true"
+				info="{status}"
+			/>
+		</List>
 
 	</Page>
 
