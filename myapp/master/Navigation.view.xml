@@ -9,12 +9,13 @@
 			items="{/Data}"
 		>
 			<StandardListItem
-				type="Active"
+				type="Navigation"
 				press="handleSelectItem"
 				title="{name}"
 				description="{description}"
 				unread="true"
 				info="{status}"
+				infoState="{ path: 'status', formatter: 'myapp.util.Formatter.status' }"
 			/>
 		</List>
 

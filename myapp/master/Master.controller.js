@@ -1,6 +1,8 @@
+jQuery.sap.require("myapp.util.Formatter");
+
 sap.ui.controller('myapp.master.Master', {
-  
-  onInit: function() {
+
+	onInit: function() {
 		var oModel = new sap.ui.model.json.JSONModel('model/inbox.json');
 		this.getView().setModel(oModel);
 	},
