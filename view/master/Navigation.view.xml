@@ -1,0 +1,24 @@
+<core:View controllerName="view.master.Master"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<Page title="{i18n>navigation}">
+
+		<List
+			headerText="{i18n>inbox}"
+			showUnread="true"
+			items="{/Data}"
+		>
+			<StandardListItem
+				type="Navigation"
+				press="handleSelectItem"
+				title="{name}"
+				description="{description}"
+				unread="true"
+				info="{status}"
+				infoState="{ path: 'status', formatter: 'myapp.util.Formatter.status' }"
+			/>
+		</List>
+
+	</Page>
+
+</core:View>

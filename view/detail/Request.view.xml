@@ -1,0 +1,14 @@
+<core:View controllerName="view.detail.Request"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<Page
+		title="{name} - {description}"
+		showNavButton="true"
+		navButtonPress="handleNavBack">
+		
+		<html:p>texctik</html:p>
+
+		
+	</Page>
+
+</core:View>
