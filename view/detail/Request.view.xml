@@ -1,13 +1,44 @@
 <core:View controllerName="view.detail.Request"
-	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:commons="sap.ui.commons" xmlns:html="http://www.w3.org/1999/xhtml">
 
 	<Page
-		title="{name} - {description}"
+		title="{i18n>request}"
 		showNavButton="true"
 		navButtonPress="handleNavBack">
-		
-		<html:p>texctik</html:p>
 
+		<headerContent>
+			<Text text="{status}" />
+			<core:Icon
+				src="{ path: 'status', formatter: 'myapp.util.Formatter.statusIcon' }"
+				color="{ path: 'status', formatter: 'myapp.util.Formatter.statusColor' }" />
+		</headerContent>
+
+		<subHeader>
+			<Toolbar>
+					<Text text="{subject}" />
+			</Toolbar>
+		</subHeader>
+		
+		<content>
+			<ObjectHeader title="{name}">
+				<ObjectAttribute text="{description}" />	
+				<ObjectAttribute text="{sent}" />	
+			</ObjectHeader>
+
+			<Panel>
+				<Text text="{content}" />
+			</Panel>
+		</content>
+
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button text="{i18n>approve}" type="Accept" />
+					<Button text="{i18n>reject}" type="Reject" />
+					<Button text="{i18n>forward}" icon="sap-icon://forward" />
+				</contentRight>
+			</Bar>
+		</footer>
 		
 	</Page>
 

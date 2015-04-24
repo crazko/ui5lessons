@@ -1,4 +1,5 @@
 jQuery.sap.require('sap.m.MessageBox');
+jQuery.sap.require('myapp.util.Formatter');
 
 sap.ui.controller('view.detail.Request', {
 
@@ -18,7 +19,7 @@ sap.ui.controller('view.detail.Request', {
 	},
 
 	handleNavBack: function() {
-		this.oRouter.myNavBack("empty", {});
+		this.oRouter.myNavBack('empty', {});
 	}
 
 });

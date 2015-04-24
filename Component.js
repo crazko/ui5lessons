@@ -25,7 +25,7 @@ sap.ui.core.UIComponent.extend('myapp.Component', {
 							name: "request",
 							view: "Request",
 							viewPath: "view.detail",
-							// viewLevel: 1,
+							viewLevel: 1,
 							targetAggregation: "detailPages"
 						},
 						{
@@ -33,7 +33,7 @@ sap.ui.core.UIComponent.extend('myapp.Component', {
 							name: "empty",
 							view: "Empty",
 							viewPath: "view.detail",
-							// viewLevel: 1,
+							viewLevel: 1,
 							targetAggregation: "detailPages"
 						},
 					]

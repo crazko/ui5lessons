@@ -1,4 +1,4 @@
-jQuery.sap.require("myapp.util.Formatter");
+jQuery.sap.require('myapp.util.Formatter');
 
 sap.ui.controller('view.master.Master', {
 
@@ -25,7 +25,7 @@ sap.ui.controller('view.master.Master', {
 		
 		oItem.setUnread(false);
 
-		this._oRouter.navTo("request", {requestId: sRequestId});
+		this._oRouter.navTo('request', {requestId: sRequestId});
 	}
 
 });
