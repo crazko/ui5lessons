@@ -7,7 +7,7 @@
 			"subject": "Please approve or reject the request for ...",
 			"status": "New",
 			"sent": "2015-03-21 12:24:36",
-			"content": "Roman Veselý has request the following absence/attendence.\\nAbs./Attendencetype: Mobile Work\\nBegin: 08.04.2015\\nEnd: 08.04.2015\\nBegin\\ntime: 08:00:00nEnd time: 16:00:00\\nNumber of Hours: 8,00\\nComment: UI5\\nTest Mobile Work\\nAddress: UI5",
+			"content": "Roman Veselý has request the following absence/attendence.\nAbs./Attendencetype: Mobile Work\nBegin: 08.04.2015\nEnd: 08.04.2015\nBegin\ntime: 08:00:00\nEnd time: 16:00:00\nNumber of Hours: 8,00\nComment: UI5\nTest Mobile Work\nAddress: UI5",
 			"attachments": [
 				{
 					"name": "project.pdf"
@@ -24,7 +24,7 @@
 			"subject": "Please approve or reject the request for ...",
 			"status": "In Progress",
 			"sent": "2015-03-28 14:14:36",
-			"content": "Roman Veselý has request the following absence/attendence.\\nAbs./Attendencetype: Mobile Work\\nBegin: 08.04.2015\\nEnd: 08.04.2015\\nBegin\\ntime: 08:00:00\\nEnd time: 16:00:00\\nNumber of Hours: 8,00\\nComment: UI5\\nTest Mobile Work\\nAddress: UI5"
+			"content": "Roman Veselý has request the following absence/attendence.\nAbs./Attendencetype: Mobile Work\nBegin: 08.04.2015\nEnd: 08.04.2015\nBegin\ntime: 08:00:00\nEnd time: 16:00:00\nNumber of Hours: 8,00\nComment: UI5\nTest Mobile Work\nAddress: UI5"
 		},
 		{
 			"id": 3,
@@ -33,7 +33,7 @@
 			"subject": "Please approve or reject the request for ...",
 			"status": "New",
 			"sent": "2015-04-25 14:14:36",
-			"content": "Roman Veselý has request the following absence/attendence.\\nAbs./Attendencetype: Mobile Work\\nBegin: 08.04.2015\\nEnd: 08.04.2015\\nBegin\\ntime: 08:00:00\\nEnd time: 16:00:00\\nNumber of Hours: 8,00\\nComment: UI5\\nTest Mobile Work\\nAddress: UI5"
+			"content": "Roman Veselý has request the following absence/attendence.\nAbs./Attendencetype: Mobile Work\nBegin: 08.04.2015\nEnd: 08.04.2015\nBegin\ntime: 08:00:00\nEnd time: 16:00:00\nNumber of Hours: 8,00\nComment: UI5\nTest Mobile Work\nAddress: UI5"
 		}
 	]
 }
