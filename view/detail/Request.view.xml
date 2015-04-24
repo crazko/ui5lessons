@@ -30,7 +30,8 @@
 			</Panel>
 
 			<Table
-				items="{attachments}">
+				items="{attachments}"
+				visible="{ path: 'attachments', formatter: 'myapp.util.Formatter.hasAttachments' }">
 				<headerToolbar>
 					<Toolbar>
 						<Label text="{i18n>attachments}" />

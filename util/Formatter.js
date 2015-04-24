@@ -11,5 +11,9 @@ myapp.util.Formatter = {
 
 	statusColor: function(sType) {
 		return (sType === 'New') ? 'green' : 'red';
+	},
+
+	hasAttachments: function(oAttachments) {
+		return (oAttachments) ? true : false;
 	}
 }
