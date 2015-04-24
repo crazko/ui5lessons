@@ -28,6 +28,27 @@
 			<Panel>
 				<Text text="{content}" />
 			</Panel>
+
+			<Table
+				items="{attachments}">
+				<headerToolbar>
+					<Toolbar>
+						<Label text="{i18n>attachments}" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>name}" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{name}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
 		</content>
 
 		<footer>
