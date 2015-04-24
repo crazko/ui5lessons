@@ -1,4 +1,5 @@
 jQuery.sap.require('sap.m.MessageBox');
+jQuery.sap.require('sap.m.MessageToast');
 jQuery.sap.require('myapp.util.Formatter');
 
 sap.ui.controller('view.detail.Request', {
@@ -20,6 +21,18 @@ sap.ui.controller('view.detail.Request', {
 
 	handleNavBack: function() {
 		this.oRouter.myNavBack('empty', {});
+	},
+
+	handleRequestApprove: function(e) {
+		sap.m.MessageToast.show('Request was approved');
+	},
+
+	handleRequestReject: function(e) {
+		sap.m.MessageToast.show('Request was rejected');
+	},
+
+	handleRequestForward: function(e) {
+		sap.m.MessageToast.show('Request was forwarded');
 	}
 
 });

@@ -54,9 +54,21 @@
 		<footer>
 			<Bar>
 				<contentRight>
-					<Button text="{i18n>approve}" type="Accept" />
-					<Button text="{i18n>reject}" type="Reject" />
-					<Button text="{i18n>forward}" icon="sap-icon://forward" />
+					<Button
+						text="{i18n>approve}"
+						type="Accept"
+						press="handleRequestApprove"
+					/>
+					<Button
+						text="{i18n>reject}"
+						type="Reject"
+						press="handleRequestReject"
+					/>
+					<Button
+						text="{i18n>forward}"
+						icon="sap-icon://forward"
+						press="handleRequestForward"
+					/>
 				</contentRight>
 			</Bar>
 		</footer>
