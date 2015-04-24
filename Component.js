@@ -74,7 +74,9 @@ sap.ui.core.UIComponent.extend('myapp.Component', {
 			}
 		});
 
-		var oModel = new sap.ui.model.json.JSONModel('model/inbox.json');
+		// var oModel = new sap.ui.model.json.JSONModel('model/inbox.json');
+		var oModel = new myJSONModel;
+		oModel.loadDataNew('path/to/request_handler', this._fnSuccess, this._fnError);
 
 		oView.setModel(oModel);
 
@@ -85,6 +87,16 @@ sap.ui.core.UIComponent.extend('myapp.Component', {
 		oView.setModel(oTranslationModel, 'i18n');
 
 		return oView;
+	},
+
+	_fnSuccess: function(oData) {
+		if(oData.success === 'false') {
+			sap.ui.commons.MessageBox.alert(oData.msg);
+		}
+	},
+
+	_fnError: function(oData) {
+		sap.ui.commons.MessageBox.alert('Error loading data');
 	}
 
 });
